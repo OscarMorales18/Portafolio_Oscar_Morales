@@ -5,56 +5,56 @@
 		<meta property="og:type" content="webside">
 		<meta property="og:tittle" content="Portafolio | Oscar Morales">
 		<meta property="og:locale" content="es_GT">
+
 		<!--Nos pérmite colocar las tildes, signos de interrogación y la ñ-->
 		<meta charset="UTF-8">
-		<script></script>
-		
+
 		<title>Inicio | Oscar Morales</title>
+
+		<!--Con este link vamos a poder conctarlo a otro archivo que servirá como CSS-->
+		<link rel="stylesheet" href="style.css">
 	</head>
 
-	<body style="background-color:black;">
-	<header>
+	<!--<body style="background-color:black;">-->
+	<body>
+		<header>
 
-		<nav>
-			<a href="#">Inicio</a>
-			<!--Estas cositas de aqui permiten dejar espacios entre los textos (&nbsp;)-->
-			&nbsp;&nbsp;&nbsp;
-			<a href="#">Sobre mí</a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="#">Proyectos</a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="#">Experiencia</a>
-		</nav>
+			<h1 class="logo">Portafolio</h1>
 
-		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white">Oscar Morales</font></h1>
-		<p><font color="white">-------------Analista de Datos Junior-------------</font></p>
-		<p></p>
+			<nav>
+				<a href="#SobreMi">Sobre mí</a>
+				<a href="#Proyectos">Proyectos</a>
+				<a href="#Certificados">Certificados</a>
+				<a href="#Habilidades">Habilidades</a>
+				<a href="#Contacto">Contacto</a>
+			</nav>
 
-	</header>
+		</header>
+
+		<main>
+			<section id="SobreMi">
+				<h2>Sobre Mi</h2>
+				<div class="image">
+                <div>
+                    <img src="TainyData.jpg" alt="Imagen del Album Data" width="400px" heigth="100px"/> 
+                </div>
+            </div>
+			</section>
+			<section id="Proyectos">
+				<h2>Proyectos</h2>
+			</section>
+			<section id="Certificados">
+				<h2>Certificados</h2>
+			</section>
+			<section id="Habilidades">
+				<h2>Habilidades</h2>
+			</section>
+			<section id="Contacto">
+				<h2>Contacto</h2>
+			</section>
+		</main>
 
 		<script>console.log("Hola Mundo")</script>
-		<!--Imagen editada para que sea mas pequena-->
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="TainyData.jpg" alt="Imagen del Album Data" width="200px" heigth="100px"/>
-
-	<main>
-		<h2><font color="white">Sobre mi...</font></h2>
-		<p><font color="white">Soy un estudiante de Ingenieria en Sistemas que va circulando el octavo semestre; estoy 
-			interesado en la Inteligencia de Negocios aplicando herramientas como Excel, Power BI, MySQL Workbench, Lenguaje R y Tableau.</font></p>
-		<br><br><br>
-		<h2><font color="white">Contacto</font></h2>
-        <input type="submit" value="Abrir Correo"/>
-	</main>
-
-	<!--Le voy a eliminar luego de aplicar CSS, solo es como ejemplo (resolución de la laptop)-->
-	<br><br><br><br><br><br>
-
-	<footer>
-		<nav>
-			<span><font color="white">Copyright © 2026 Oscar Morales</font></span>
-			<span><font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contacto</font></span>
-			<span><font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Curriculum</font></span>
-		</nav>
-	</footer>
 
 	</body>
 </html>

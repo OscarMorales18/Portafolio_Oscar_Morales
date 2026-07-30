@@ -1,0 +1,97 @@
+/*Esto elimina los espacios que puede generar el navegador, para que no hayan margenes incorrectos*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*Seccion que manipula la pagina entera*/
+html{
+    /*Permite que el scroll por secciones sea mas suave*/
+    scroll-behavior: smooth;
+}
+
+/*Seccion de variables globales para el programa*/
+:root{
+    --negro:#000;
+    --blanco:#ffffff;
+}
+
+/*Seccion para manipular el cuerpo del programa*/
+body{
+    /*Colocamos el fondo negro y letras blancas*/
+    background:var(--negro);
+    color:var(--blanco);
+}
+
+/*Seccion para manipular el encabezado del programa*/
+header{
+    /*Tamano del encabezado*/
+    height:120px;
+    /*Permite que el texto pueda estar en la misma linea; sea mas flexible a cambios*/
+    display: flex;
+    /*Genera un espacio de extremo a extremo a los textos*/
+    justify-content:space-between;
+    /*Coloca el texto en el centro del encabezado*/
+    align-items: center;
+    /*Espacio entre el texto y los extremos*/
+    padding:0 40px;
+    /*Coloca un limite del encabezado, una linea*/
+    border-bottom:1px solid rgb(255, 255, 255);
+
+    /*Coloca el encabezado como fijo*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.logo{
+    font-size:105px;
+    font-weight:bold;
+}
+
+nav{
+    /*Texto mas flexible a cambios*/
+    display:flex;
+    /*Realiza una separacion entre textos*/
+    gap:60px;
+    /*Con esto podremnos manipualr la posicion de Y*/
+    padding-top:50px;
+}
+
+/*Cambios para la lista dentro del nav (textos programables)*/
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:30px;
+    /*Tiempo en el que pasaran las cosas (en este caso para cuando pasemos el cursor)*/
+    transition:.3s;
+}
+
+/*Cambios cuando se pasa el cursor encima del texto programable*/
+nav a:hover{
+    color: #3f3f3f;
+}
+
+/*Seccion para manipular las secciones del programa*/
+section{
+    /*Modifica el espacio entre secciones*/
+    min-height: 95vh;
+    /*El primero modifica el espacio del texto al borde cuando baja*/
+    /*El segundo modifica el espacio del texto al borde izquierdo*/
+    padding: 40px 40px;
+    /*Permite que el titulo no sea tapado por el encabezado*/
+    scroll-margin-top: 120px;
+}
+
+/*Podemos modificar seccion por seccion*/
+#SobreMi{
+    /*Separacion del tope*/
+    padding-top: 150px;
+}
+
+.image{
+    padding-left: 510px;
+    padding-top: 50px;
+}
