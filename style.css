@@ -22,6 +22,9 @@ body{
     /*Colocamos el fondo negro y letras blancas*/
     background:var(--negro);
     color:var(--blanco);
+
+    /*Quita la barra de desplazamiento horizontal cuando un objeto la llama*/
+    overflow-x: hidden
 }
 
 /*Seccion para manipular el encabezado del programa*/
@@ -44,6 +47,9 @@ header{
     top: 0;
     width: 100%;
     background-color: #000;
+ 
+    /*hace que el encabezado quede por encima siempre, solo falta poner un -1 para los que quiero atras*/
+    z-index: 1000;
 }
 
 .logo{
@@ -91,7 +97,151 @@ section{
     padding-top: 150px;
 }
 
-.image{
+.ciculosdeg{
+    /*Permite que la posicion sea manejable*/
+    position: relative;
     padding-left: 510px;
     padding-top: 50px;
+    /*Infinite es para siempre, forwards solo cuando se carga*/
+    animation: slide 3s ease-in-out forwards;
+}
+
+/**/
+
+@keyframes slide {
+    0%{
+        opacity: 0%;
+        bottom: 10%;
+    }
+
+    100%{
+        opacity: 100%;
+        bottom: 14%;
+    }
+}
+
+#circle{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    z-index: -2;
+
+    left: -90px;
+    top: 116px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
+}
+
+#circle2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    z-index: -2;
+
+    left: 1120px;
+    top: -16px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
+}
+
+#circle3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -3;
+
+    /*Efecto de desenfoque*/
+    filter: blur(2px);
+
+    left: 150px;
+    top: 46px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
+}
+
+#circle4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -3;
+
+    /*Efecto de desenfoque*/
+    filter: blur(2px);
+
+    left: 1065px;
+    top: 259px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
+}
+
+#circle5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -3;
+
+    /*Efecto de desenfoque*/
+    filter: blur(5px);
+
+    left: 320px;
+    top: 230px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
+}
+
+#circle6{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -3;
+
+    /*Efecto de desenfoque*/
+    filter: blur(5px);
+
+    left: 1008px;
+    top: 160px;
+
+    background: linear-gradient(
+        to bottom,
+        #2B3C95 4%,
+        #5545AD 24%,
+        #F6515A 64%,
+        #FD8F54 84%
+    );
 }
