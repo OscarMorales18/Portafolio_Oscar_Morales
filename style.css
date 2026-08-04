@@ -248,6 +248,10 @@ section{
 
 @media (max-width: 773px){
 
+    body{
+        background: rgb(242, 56, 81);
+    }
+
    section{
         /*Modifica el espacio entre secciones*/
         min-height: 95vh;
@@ -256,6 +260,11 @@ section{
         padding: 40px 40px;
         /*Permite que el titulo no sea tapado por el encabezado*/
         scroll-margin-top: 120px;
+    }
+
+    .logo{
+        font-size:75px;
+        font-weight:bold;
     }
 
     #circle{
