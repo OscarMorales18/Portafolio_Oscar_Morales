@@ -560,7 +560,6 @@ section{
         padding-top: 20px;
     }
 
-    /* Orden real en el HTML: bienvenida, nombre, ocupacion, frace */
     .bienvenida,
     .nombre,
     .ocupacion,
@@ -671,41 +670,82 @@ section{
         top: 445px;
     }
 
-    /* ===== Sección Proyectos ===== */
     .TituloProyectos{
         position: absolute;
         left: 0;
-        top: 0;
+        top: 130;
         font-size: 32px;
         padding: 20px 20px 0;
     }
 
     .rectangulos{
+        position: absolute;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
     }
 
-    /* Orden real: titulo_primero, titulo_segundo (dentro de .proyects) */
-    .titulo_primero,
-    .titulo_segundo{
+    .titulo_primero{
         position: absolute;
-        left: 0;
-        top: 0;
+        left: -20;
+        top: 240;
         font-size: 24px;
         margin-bottom: 15px;
+
+        display: block;
+        max-width: 50%;
+        white-space: normal;
     }
 
-    /* Luego: Cap1_1P, Cap2_1P, Cap1_2P, Cap2_2P */
-    .Cap1_1P, .Cap2_1P, .Cap1_2P, .Cap2_2P{
+    .titulo_segundo{
         position: absolute;
+        left: -20;
+        top: 430;
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: 20px;
+
+        display: block;
+        max-width: 50%;
+        white-space: normal;
+    }
+
+    .Cap1_1P, .Cap2_1P, .Cap1_2P, .Cap2_2P{
+        position: relative;
         left: 0;
         top: 0;
-        transform: none;
         max-width: 100%;
         display: block;
         margin: 15px auto;
         text-align: center;
+    }
+
+    .Cap1_1P{
+        left: 75px;
+        top: 130px;
+        transform: rotate(-5deg);
+        width: 150px;
+    }
+
+    .Cap2_1P{
+        left: 145px;
+        top: 80px;
+        transform: rotate(5deg);
+        width: 150px;
+    }
+
+    .Cap1_2P{
+        left: 80px;
+        top: 80px;
+        transform: rotate(5deg);
+        width: 170px;
+    }
+
+    .Cap2_2P{
+        left: 140px;
+        top: 10px;
+        transform: rotate(-5deg);
+        width: 170px;
     }
 
     .Cap1_1P img, .Cap2_1P img,
@@ -714,7 +754,6 @@ section{
         height: auto;
     }
 
-    /* Luego: los 5 logos */
     .logo_excel1, .logo_excel2,
     .logo_sqls, .logo_powerbi, .logo_sqlw{
         position: absolute;
@@ -724,8 +763,71 @@ section{
         margin: 5px;
     }
 
-    /* Rectángulos decorativos de fondo: se ocultan en mobile */
-    #recta, #recta2, #recta3, #recta4, #recta5{
+    .logo_excel1{
+        left: -30px;
+        top: 340px;
+    }
+
+    .logo_sqls{
+        left: 35px;
+        top: 340px;
+    }
+
+    .logo_excel2{
+        left: -30px;
+        top: 532px;
+    }
+
+    .logo_powerbi{
+        left: 35px;
+        top: 532px;
+    }
+
+    .logo_sqlw{
+        left: 85px;
+        top: 532px;
+    }
+
+    .logo_excel1, .logo_excel2,
+    .logo_sqls, .logo_powerbi, .logo_sqlw{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #recta4, #recta5{
         display: none;
+    }
+
+    #recta{
+        position: absolute;
+        width: 150px;
+        height: 330px;
+        z-index: -2;
+
+        left: 50px;
+        top: 130px;
+        transform: rotate(90deg);
+    }
+
+    #recta2{
+        position: absolute;
+        width: 150px;
+        height: 370px;
+        z-index: -2;
+
+        left: 70px;
+        top: 300px;
+        transform: rotate(90deg);
+    }
+
+    #recta3{
+        position: absolute;
+        width: 150px;
+        height: 300px;
+        z-index: -2;
+
+        left: 35px;
+        top: 530px;
+        transform: rotate(90deg);
     }
 }
