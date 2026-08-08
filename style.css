@@ -528,13 +528,11 @@ section{
 
 @media (max-width: 773px){
 
-    /* Red de seguridad anti scroll horizontal */
     html, body{
         overflow-x: hidden;
         max-width: 100vw;
     }
 
-    /* ===== Header ===== */
     header{
         padding: 0 15px;
     }
@@ -553,7 +551,10 @@ section{
         display: none;
     }
 
-    /* ===== Sección Sobre Mí ===== */
+    section{
+        min-height: 100dvh;
+    }
+
     .ciculosdeg{
         padding-left: 20px;
         padding-right: 20px;
@@ -673,7 +674,7 @@ section{
     .TituloProyectos{
         position: absolute;
         left: 0;
-        top: 130;
+        top: 100px;
         font-size: 32px;
         padding: 20px 20px 0;
     }
@@ -688,19 +689,21 @@ section{
     .titulo_primero{
         position: absolute;
         left: -20;
-        top: 240;
+        top: 210;
         font-size: 24px;
         margin-bottom: 15px;
 
         display: block;
         max-width: 50%;
         white-space: normal;
+
+        text-shadow: 2px 2px 0px #000000;
     }
 
     .titulo_segundo{
         position: absolute;
         left: -20;
-        top: 430;
+        top: 400;
         font-size: 24px;
         margin-bottom: 15px;
         font-weight: 20px;
@@ -708,6 +711,8 @@ section{
         display: block;
         max-width: 50%;
         white-space: normal;
+
+        text-shadow: 2px 2px 0px #000000;
     }
 
     .Cap1_1P, .Cap2_1P, .Cap1_2P, .Cap2_2P{
@@ -722,28 +727,28 @@ section{
 
     .Cap1_1P{
         left: 75px;
-        top: 130px;
+        top: 100px;
         transform: rotate(-5deg);
         width: 150px;
     }
 
     .Cap2_1P{
         left: 145px;
-        top: 80px;
+        top: 50px;
         transform: rotate(5deg);
         width: 150px;
     }
 
     .Cap1_2P{
         left: 80px;
-        top: 80px;
+        top: 50px;
         transform: rotate(5deg);
         width: 170px;
     }
 
     .Cap2_2P{
         left: 140px;
-        top: 10px;
+        top: -20px;
         transform: rotate(-5deg);
         width: 170px;
     }
@@ -765,27 +770,27 @@ section{
 
     .logo_excel1{
         left: -30px;
-        top: 340px;
+        top: 310px;
     }
 
     .logo_sqls{
         left: 35px;
-        top: 340px;
+        top: 310px;
     }
 
     .logo_excel2{
         left: -30px;
-        top: 532px;
+        top: 502px;
     }
 
     .logo_powerbi{
         left: 35px;
-        top: 532px;
+        top: 502px;
     }
 
     .logo_sqlw{
         left: 85px;
-        top: 532px;
+        top: 502px;
     }
 
     .logo_excel1, .logo_excel2,
@@ -805,7 +810,7 @@ section{
         z-index: -2;
 
         left: 50px;
-        top: 130px;
+        top: 100px;
         transform: rotate(90deg);
     }
 
@@ -816,7 +821,7 @@ section{
         z-index: -2;
 
         left: 70px;
-        top: 300px;
+        top: 270px;
         transform: rotate(90deg);
     }
 
@@ -827,7 +832,7 @@ section{
         z-index: -2;
 
         left: 35px;
-        top: 530px;
+        top: 500px;
         transform: rotate(90deg);
     }
 }
