@@ -15,6 +15,10 @@ html{
 :root{
     --negro:#000;
     --blanco:#ffffff;
+    --movimiento_circulo_atras: slide 0.5s ease-in-out forwards;
+    --movimiento_circulo_enmedio: slide 0.5s ease-in-out 0.5s forwards;
+    --movimiento_circulo_frente: slide 0.5s ease-in-out 1s forwards;
+    --movimiento_imagen_mia: slide 0.5s ease-in-out 1.5s forwards;
 }
 
 /*Seccion para manipular el cuerpo del programa*/
@@ -83,7 +87,7 @@ nav a:hover{
 /*Seccion para manipular las secciones del programa*/
 section{
     /*Modifica el espacio entre secciones*/
-    min-height: 95vh;
+    min-height: 100vh;
     /*El primero modifica el espacio del texto al borde cuando baja*/
     /*El segundo modifica el espacio del texto al borde izquierdo*/
     padding: 40px 40px;
@@ -102,8 +106,8 @@ section{
     position: relative;
     padding-left: 510px;
     padding-top: 50px;
+    isolation: isolate;
     /*Infinite es para siempre, forwards solo cuando se carga*/
-    animation: slide 3s ease-in-out forwards;
 }
 
 /**/
@@ -125,10 +129,13 @@ section{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    z-index: -2;
+    z-index: -1;
 
     left: -90px;
     top: 116px;
+
+    animation: var(--movimiento_circulo_frente);
+    opacity: 0;
 
     background: linear-gradient(
         to bottom,
@@ -149,6 +156,9 @@ section{
     left: 1120px;
     top: -16px;
 
+    animation: var(--movimiento_circulo_frente);
+    opacity: 0;
+
     background: linear-gradient(
         to bottom,
         #2B3C95 4%,
@@ -167,6 +177,9 @@ section{
 
     /*Efecto de desenfoque*/
     filter: blur(2px);
+    animation: var(--movimiento_circulo_enmedio);
+    /*Hace que el cirulo este no aparezaca hasta que haya una animación por ejemplo*/
+    opacity: 0;
 
     left: 150px;
     top: 46px;
@@ -189,9 +202,11 @@ section{
 
     /*Efecto de desenfoque*/
     filter: blur(2px);
+    animation: var(--movimiento_circulo_enmedio);
+    opacity: 0;
 
-    left: 1065px;
-    top: 259px;
+    left: 1105px;
+    top: 299px;
 
     background: linear-gradient(
         to bottom,
@@ -211,6 +226,7 @@ section{
 
     /*Efecto de desenfoque*/
     filter: blur(5px);
+    animation: var(--movimiento_circulo_atras);
 
     left: 320px;
     top: 230px;
@@ -233,6 +249,7 @@ section{
 
     /*Efecto de desenfoque*/
     filter: blur(5px);
+    animation: var(--movimiento_circulo_atras);
 
     left: 1008px;
     top: 160px;
@@ -244,6 +261,269 @@ section{
         #F6515A 64%,
         #FD8F54 84%
     );
+}
+
+.bienvenida{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 5px;
+    top: 20px;
+    font-size:50px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 0px #000000;
+
+    animation: var(--movimiento_circulo_atras);
+    opacity: 0;
+}
+
+.nombre{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 5px;
+    top: 80px;
+    font-size:120px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 0px #000000;
+
+    max-width: 1050px; 
+
+    animation: var(--movimiento_circulo_enmedio);
+    opacity: 0;
+}
+
+.ocupacion{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 5px;
+    top: 370px;
+    font-size:29.4px;
+    font-weight: bolder;
+    text-shadow: 2.5px 2.5px 0px #000000;
+    text-decoration-line: underline;
+
+    animation: var(--movimiento_circulo_frente);
+    opacity: 0;
+}
+
+.image{
+    position: absolute;
+    left: 700px;
+    top: 25px;
+    z-index: -2;
+
+    animation: var(--movimiento_imagen_mia);
+    opacity: 0;
+}
+
+.frace{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 1220px;
+    top: 65px;
+    font-size:29.4px;
+    font-weight: bolder;
+    text-shadow: 2.5px 2.5px 0px #000000;
+
+    animation: var(--movimiento_imagen_mia);
+    opacity: 0;
+}
+
+.lineas_fondo{
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(58, 58, 58) 1px, transparent 3px);
+    background-size: 100% 30px;
+}
+
+.TituloProyectos{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 45px;
+    top: 30px;
+    font-size:50px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 0px #000000;
+}
+
+.rectangulos{
+    position: relative;
+    padding-left: 510px;
+    padding-top: 50px;
+    isolation: isolate;
+}
+
+#recta{
+    position: absolute;
+    width: 350px;
+    height: 390px;
+    z-index: -2;
+
+    left: 175px;
+    top: 110px;
+
+    background: linear-gradient(
+        to bottom,
+        #0C1635 0%,
+        #2B3C95 50%,
+        #5545AD 100%
+    );
+}
+
+#recta2{
+    position: absolute;
+    width: 350px;
+    height: 480px;
+    z-index: -2;
+
+    left: 575px;
+    top: 20px;
+
+    background: linear-gradient(
+        to bottom,
+        #0C1635 0%,
+        #2B3C95 50%,
+        #5545AD 100%
+    );
+}
+
+#recta3{
+    position: absolute;
+    width: 350px;
+    height: 359px;
+    z-index: -2;
+
+    left: 975px;
+    top: 141px;
+
+    background: linear-gradient(
+        to bottom,
+        #0C1635 0%,
+        #2B3C95 50%,
+        #5545AD 100%
+    );
+}
+
+
+/*Rectangulos no usados*/
+#recta4{
+    position: absolute;
+    width: 350px;
+    height: 420px;
+    z-index: -2;
+
+    left: -225px;
+    top: 80px;
+    
+
+    background: linear-gradient(
+        to bottom,
+        #0C1635 0%,
+        #2B3C95 50%,
+        #5545AD 100%
+    );
+}
+
+#recta5{
+    position: absolute;
+    width: 350px;
+    height: 479px;
+    z-index: -2;
+
+    left: 1375px;
+    top: 21px;
+
+    background: linear-gradient(
+        to bottom,
+        #0C1635 0%,
+        #2B3C95 50%,
+        #5545AD 100%
+    );
+}
+
+.Cap1_1P{
+    position: absolute;
+    left: 150px;
+    top: 240px;
+    /*Inclina un poco las imagenes*/
+    transform: rotate(-5deg);
+}
+
+.Cap2_1P{
+    position: absolute;
+    left: 280px;
+    top: 350px;
+    transform: rotate(5deg);
+}
+
+.Cap1_2P{
+    position: absolute;
+    left: 570px;
+    top: 150px;
+    /*Inclina un poco las imagenes*/
+    transform: rotate(5deg);
+}
+
+.Cap2_2P{
+    position: absolute;
+    left: 650px;
+    top: 320px;
+    transform: rotate(-5deg);
+}
+
+.logo_excel1{
+    position: absolute;
+    top: 100px;
+    left: 370px;
+}
+
+.logo_sqls{
+    position: absolute;
+    top: 98px;
+    left: 440px;
+}
+
+.logo_excel2{
+    position: absolute;
+    top: 10px;
+    left: 740px;
+}
+
+.logo_powerbi{
+    position: absolute;
+    top: 10px;
+    left: 810px;
+}
+
+.logo_sqlw{
+    position: absolute;
+    top: 10px;
+    left: 865px;
+}
+
+.titulo_primero{
+    position: absolute;
+    display: flex;
+    left: 200px;
+    top: 120px;
+    font-size:37px;
+    font-weight: bolder;
+    text-shadow: 2.5px 2.5px 0px #000000;
+    text-decoration-line: underline;
+}
+
+.titulo_segundo{
+    position: absolute;
+    display: flex;
+    left: 597px;
+    top: 35px;
+    font-size:37px;
+    font-weight: bolder;
+    text-shadow: 2.5px 2.5px 0px #000000;
+    text-decoration-line: underline;
 }
 
 @media (max-width: 773px){
