@@ -575,34 +575,34 @@ section{
 
     .bienvenida{ 
         font-size: 28px; 
-        top: -10px;
+        top: -20px;
         text-shadow: 2px 2px 0px #000000;
     }
     .nombre{ 
         font-size: 44px; 
-        top: 33px;
+        top: 23px;
         text-shadow: 2px 2px 0px #000000;
     }
     .ocupacion{ 
         font-size: 18px; 
-        top: 143px;
+        top: 133px;
         text-shadow: 2px 2px 0px #000000;
     }
     .frace{ 
         font-size: 16px;
-        top: 565px; 
+        top: 530px; 
         text-shadow: 2px 2px 0px #000000;
+        z-index: 10;
     }
 
     .image{
         position: absolute;
         left: 0;
-        top: 0;
         display: block;
         max-width: 100%;
         margin: 20px auto;
         text-align: center;
-        top: 205px;
+        top: 180px;
         z-index: -1;
     }
 
@@ -616,7 +616,7 @@ section{
         width: 250px;
         height: 250px;
         left: -100px;
-        top: 50px;
+        top: 40px;
         z-index: 0;
     }
 
@@ -625,7 +625,7 @@ section{
         width: 250px;
         height: 250px;
         left: 160px;
-        top: 330px;
+        top: 320px;
         z-index: -2;
     }
 
@@ -636,7 +636,7 @@ section{
         z-index: -2;
 
         left: 70px;
-        top: 7px;
+        top: -3px;
     }
 
     #circle4{
@@ -646,7 +646,7 @@ section{
         z-index: -3;
 
         left: 120px;
-        top: 500px;
+        top: 490px;
     }
 
     #circle5{
@@ -657,7 +657,7 @@ section{
         z-index: -3;
 
         left: 170px;
-        top: 150px;
+        top: 140px;
     }
 
     #circle6{
@@ -668,13 +668,13 @@ section{
         z-index: -3;
 
         left: 93px;
-        top: 445px;
+        top: 435px;
     }
 
     .TituloProyectos{
         position: absolute;
         left: 0;
-        top: 100px;
+        top: 85px;
         font-size: 32px;
         padding: 20px 20px 0;
     }
@@ -689,7 +689,7 @@ section{
     .titulo_primero{
         position: absolute;
         left: -20;
-        top: 210;
+        top: 195;
         font-size: 24px;
         margin-bottom: 15px;
 
@@ -703,7 +703,7 @@ section{
     .titulo_segundo{
         position: absolute;
         left: -20;
-        top: 400;
+        top: 385;
         font-size: 24px;
         margin-bottom: 15px;
         font-weight: 20px;
@@ -727,28 +727,28 @@ section{
 
     .Cap1_1P{
         left: 75px;
-        top: 100px;
+        top: 85px;
         transform: rotate(-5deg);
         width: 150px;
     }
 
     .Cap2_1P{
         left: 145px;
-        top: 50px;
+        top: 35px;
         transform: rotate(5deg);
         width: 150px;
     }
 
     .Cap1_2P{
         left: 80px;
-        top: 50px;
+        top: 35px;
         transform: rotate(5deg);
         width: 170px;
     }
 
     .Cap2_2P{
         left: 140px;
-        top: -20px;
+        top: -35px;
         transform: rotate(-5deg);
         width: 170px;
     }
@@ -770,27 +770,27 @@ section{
 
     .logo_excel1{
         left: -30px;
-        top: 310px;
+        top: 295px;
     }
 
     .logo_sqls{
         left: 35px;
-        top: 310px;
+        top: 295px;
     }
 
     .logo_excel2{
         left: -30px;
-        top: 502px;
+        top: 487px;
     }
 
     .logo_powerbi{
         left: 35px;
-        top: 502px;
+        top: 487px;
     }
 
     .logo_sqlw{
         left: 85px;
-        top: 502px;
+        top: 487px;
     }
 
     .logo_excel1, .logo_excel2,
@@ -810,7 +810,7 @@ section{
         z-index: -2;
 
         left: 50px;
-        top: 100px;
+        top: 85px;
         transform: rotate(90deg);
     }
 
@@ -821,7 +821,7 @@ section{
         z-index: -2;
 
         left: 70px;
-        top: 270px;
+        top: 255px;
         transform: rotate(90deg);
     }
 
@@ -832,7 +832,7 @@ section{
         z-index: -2;
 
         left: 35px;
-        top: 500px;
+        top: 485px;
         transform: rotate(90deg);
     }
 }
