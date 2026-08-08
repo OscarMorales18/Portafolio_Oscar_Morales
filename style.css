@@ -674,7 +674,7 @@ section{
     .TituloProyectos{
         position: absolute;
         left: 0;
-        top: 85px;
+        top: 75px;
         font-size: 32px;
         padding: 20px 20px 0;
     }
@@ -689,7 +689,7 @@ section{
     .titulo_primero{
         position: absolute;
         left: -20;
-        top: 195;
+        top: 185;
         font-size: 24px;
         margin-bottom: 15px;
 
@@ -703,7 +703,7 @@ section{
     .titulo_segundo{
         position: absolute;
         left: -20;
-        top: 385;
+        top: 375;
         font-size: 24px;
         margin-bottom: 15px;
         font-weight: 20px;
@@ -727,28 +727,28 @@ section{
 
     .Cap1_1P{
         left: 75px;
-        top: 85px;
+        top: 75px;
         transform: rotate(-5deg);
         width: 150px;
     }
 
     .Cap2_1P{
         left: 145px;
-        top: 35px;
+        top: 25px;
         transform: rotate(5deg);
         width: 150px;
     }
 
     .Cap1_2P{
         left: 80px;
-        top: 35px;
+        top: 25px;
         transform: rotate(5deg);
         width: 170px;
     }
 
     .Cap2_2P{
         left: 140px;
-        top: -35px;
+        top: -45px;
         transform: rotate(-5deg);
         width: 170px;
     }
@@ -770,27 +770,27 @@ section{
 
     .logo_excel1{
         left: -30px;
-        top: 295px;
+        top: 285px;
     }
 
     .logo_sqls{
         left: 35px;
-        top: 295px;
+        top: 285px;
     }
 
     .logo_excel2{
         left: -30px;
-        top: 487px;
+        top: 477px;
     }
 
     .logo_powerbi{
         left: 35px;
-        top: 487px;
+        top: 477px;
     }
 
     .logo_sqlw{
         left: 85px;
-        top: 487px;
+        top: 477px;
     }
 
     .logo_excel1, .logo_excel2,
@@ -810,7 +810,7 @@ section{
         z-index: -2;
 
         left: 50px;
-        top: 85px;
+        top: 75px;
         transform: rotate(90deg);
     }
 
@@ -821,7 +821,7 @@ section{
         z-index: -2;
 
         left: 70px;
-        top: 255px;
+        top: 245px;
         transform: rotate(90deg);
     }
 
@@ -832,7 +832,7 @@ section{
         z-index: -2;
 
         left: 35px;
-        top: 485px;
+        top: 475px;
         transform: rotate(90deg);
     }
 }
