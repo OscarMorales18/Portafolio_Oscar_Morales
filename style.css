@@ -744,9 +744,9 @@ section{
         display: none;
     }
 
-    section{
+    /*section{
         min-height: 100dvh;
-    }
+    }*/
 
     .ciculosdeg{
         padding-left: 20px;
