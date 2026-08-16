@@ -820,14 +820,14 @@ section{
 
     .lineas_fondo_all{
     background-size: 
-        10px 71%, /*Permite alargar la linea para abajo*/   
+        10px 73%, /*Permite alargar la linea para abajo*/   
         85% 9px, /*Permite alargar la linea para la derecha*/     
         91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px,
         91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px, 91.5% 30px; 
     
     background-position: 
         7.5% 150px,       
-        29px 93%,       
+        29px 94%,       
         17px 92.5%, 17px 87.5%, 17px 83.5%, 17px 79.5%, 17px 75.5%, 17px 71.5%, 17px 67.5%, 17px 63.5%, 17px 59.5%, 17px 55.5%, 17px 51.5%, 17px 47.5%,
         17px 43.5%, 17px 39.5%, 17px 35.5%, 17px 31.5%, 17px 27.5%, 17px 23.5%;           
     }
